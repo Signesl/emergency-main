@@ -1,0 +1,15 @@
+[popover]:popover-open {
+  display: grid;
+  justify-content: center;
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  padding: 1rem;
+}
+
+&:popover-open {
+  display: grid;
+}

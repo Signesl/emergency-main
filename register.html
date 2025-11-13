@@ -35,103 +35,110 @@
 
     <main>
       <h1>INDBERET</h1>
-      <form>
-        <div class="form-group">
-          <label for="for_navn">Fornavn</label>
-          <input
-            type="text"
-            id="for_navn"
-            name="for_navn"
-            placeholder="Skriv dit fornavn her"
-            required
-          />
-          <p class="error-message">Please enter a value</p>
-        </div>
+      <fieldset>
+        <form>
+          <h2>Dine oplysninger</h2>
+          <fieldset>
+            <div class="form-group">
+              <label for="for_navn">Fornavn</label>
+              <input
+                type="text"
+                id="for_navn"
+                name="for_navn"
+                placeholder="Skriv dit fornavn her"
+                required
+              />
+              <p class="error-message">Please enter a value</p>
+            </div>
 
-        <div class="form-group">
-          <label for="efter_navn">Efternavn</label>
-          <input
-            type="text"
-            id="efter_navn"
-            name="efter_navn"
-            placeholder="Skriv dit efternavn her"
-            required
-          />
-          <p class="error-message">Please enter a value</p>
-        </div>
+            <div class="form-group">
+              <label for="efter_navn">Efternavn</label>
+              <input
+                type="text"
+                id="efter_navn"
+                name="efter_navn"
+                placeholder="Skriv dit efternavn her"
+                required
+              />
+              <p class="error-message">Please enter a value</p>
+            </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Skriv din email her"
-            required
-          />
-          <p class="error-message">Please enter a value</p>
-        </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Skriv din email her"
+                required
+              />
+              <p class="error-message">Please enter a value</p>
+            </div>
+          </fieldset>
+          <h2>Dine observationer</h2>
+          <fieldset>
+            <div class="form-group">
+              <label for="region">Region</label>
+              <select id="region" name="region" required>
+                <option value="">Vælg en region</option>
+                <option value="nord">Midtjylland</option>
+                <option value="syd">Nordjylland</option>
+                <option value="øst">Hovedstaden</option>
+                <option value="vest">Sjælland</option>
+                <option value="vest">Syddanmark</option>
+              </select>
+              <p class="error-message">Please select a region</p>
+            </div>
 
-        <div class="form-group">
-          <label for="region">Region</label>
-          <select id="region" name="region" required>
-            <option value="">Vælg en region</option>
-            <option value="nord">Midtjylland</option>
-            <option value="syd">Nordjylland</option>
-            <option value="øst">Hovedstaden</option>
-            <option value="vest">Sjælland</option>
-            <option value="vest">Syddanmark</option>
-          </select>
-          <p class="error-message">Please select a region</p>
-        </div>
+            <div class="form-group">
+              <label for="beskrivelse">Beskrivelse</label>
+              <textarea
+                id="beskrivelse"
+                name="beskrivelse"
+                placeholder="Beskriv hvad du har observeret.."
+                required
+              ></textarea>
+              <p class="error-message">Please enter a value</p>
+            </div>
 
-        <div class="form-group">
-          <label for="beskrivelse">Beskrivelse</label>
-          <textarea
-            id="beskrivelse"
-            name="beskrivelse"
-            placeholder="Beskriv hvad du har observeret.."
-            required
-          ></textarea>
-          <p class="error-message">Please enter a value</p>
-        </div>
+            <div class="form-group">
+              <label class="required-question">Har du set blæksprutten?</label>
+              <input
+                type="radio"
+                id="blæksprutte_ja"
+                name="blæksprutte"
+                value="ja"
+              />
+              <label for="blæksprutte_ja">Ja</label>
 
-        <div class="form-group">
-          <label class="required-question">Har du set blæksprutten?</label>
-          <input
-            type="radio"
-            id="blæksprutte_ja"
-            name="blæksprutte"
-            value="ja"
-          />
-          <label for="blæksprutte_ja">Ja</label>
+              <input
+                type="radio"
+                id="blæksprutte_nej"
+                name="blæksprutte"
+                value="nej"
+              />
+              <label for="blæksprutte_nej">Nej</label>
 
-          <input
-            type="radio"
-            id="blæksprutte_nej"
-            name="blæksprutte"
-            value="nej"
-          />
-          <label for="blæksprutte_nej">Nej</label>
+              <p class="error-message">Please select an option</p>
+            </div>
+          </fieldset>
 
-          <p class="error-message">Please select an option</p>
-        </div>
+          <div class="form-group">
+            <label for="terms">
+              <input
+                type="checkbox"
+                id="terms"
+                name="accept_terms"
+                value="yes"
+                required
+              />
+              Du accepterer på tro og love at dine observationer er korrekte.
+            </label>
+          </div>
 
-        <div class="form-group">
-          <label for="terms">
-            <input
-              type="checkbox"
-              id="terms"
-              name="accept_terms"
-              value="yes"
-              required
-            />
-            Du accepterer på tro og love at dine observationer er korrekte.
-          </label>
-        </div>
-
-        <button>Indsend</button>
-      </form>
+          <button>Indsend</button>
+        </form>
+      </fieldset>
     </main>
     <footer>
       <nav class="some">

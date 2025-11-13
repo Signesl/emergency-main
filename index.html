@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" type="image/png" href="img/fav.png" />
     <title>Emergency Site</title>
   </head>
@@ -31,58 +32,220 @@
         </button>
       </nav>
     </header>
+
     <section id="main-disclamer">
       <div id="main-disclamer-content">
         <img src="warning" alt="ICON" />
         <div>
-          <h1>OVERSKRIFT</h1>
-          <p class="sub">Underrubrik</p>
+          <h1>DANMARK ER RAMT</h1>
         </div>
       </div>
     </section>
+
     <main>
       <section id="daily">
         <article class="daily_card">
           <img src="" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Myndighedernes vigtigste anbefalinger</h2>
+            <p>Myndighederne anbefaler</p>
+            <details>
+              <summary class="cta_btn">se mere</summary>
+              <p>
+                Det er vigtigt at vi som land står sammen og hjælper hinanden.
+                Det er afgørende for, hvordan vi kommer ud på den anden side af
+                denne trussel. Vi skal arbejde sammen og forholde os i ro, samt
+                følge de råd som bliver givet fra myndighederne.
+              </p>
+            </details>
           </div>
         </article>
+
         <article class="daily_card">
           <img src="" alt="teaser_img" />
           <div class="daily_text">
-            <h2>Teaser</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              magnam ducimus ea, sed minima asperiores.
-            </p>
-            <a href="" class="cta_btn">Se mere</a>
+            <h2>Hvordan ser blæksprutten ud?</h2>
+            <p>Beskrivelse af blæksprutten</p>
+            <details>
+              <summary class="cta_btn">se mere</summary>
+              <p>
+                Blæksprutten er indtil videre kun blevet set i en lilla farve.
+                Vi ved om blæksprutter at de kan karmuflere sig, men der er
+                ingen faglig viden koblet op på den fakta i denne forbindelse.
+                Blæksprutten er blevet set i forskellige størrelser og det er
+                efter alt at dømme så den kan komme så tæt på lang som muligt.
+                Det er en vigtig viden at have hvis man vil rapportere en
+                observation.
+              </p>
+            </details>
           </div>
         </article>
       </section>
+
       <section id="breaking">
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>
+            ALARM: BLÆKSPRUTTEN OBSERVERET I KØBENHAVNS HAVN. KRITISK TRUSSEL
+            ERKLÆRET
+          </p>
+          <img src="img/octopus1.webp" alt="octopus1" />
+          <button popovertarget="popup" class="cta_btn">Læs mere</button>
+
+          <div popover id="popup">
+            <h2>
+              ALARM: BLÆKSPRUTTEN OBSERVERET I KØBENHAVNS HAVN. KRITISK TRUSSEL
+              ERKLÆRET
+            </h2>
+            <p>
+              Blæksprutten er bekræftet i Københavns Havn og har etableret en
+              vedvarende tilstedeværelse i de centrale farvande. Den er gentagne
+              gange og åbenlyst observeret tæt på land, senest i området ved
+              Inderhavnen, hvor den med kolossal ro har brudt vandoverfladen.
+              Denne demonstrative adfærd antyder en bevidst handling, og dens
+              tilstedeværelse er ikke en tilfældighed, men en erklæret
+              situation. Alle borgere skal anerkende, at dette er en national
+              krise af ukendt varighed og konsekvens.
+            </p>
+            <p>
+              Blæksprutten udgør nu en akut og stadigt voksende trussel mod
+              national sikkerhed og infrastruktur. Væsenets bevægelser, selv de
+              mest minimale, genererer massive, uforklarlige rystelser i
+              jordbunden. Rystelserne mærkes i øjeblikket fra Jylland til
+              Bornholm. Geologiske analyser indikerer, at rystelserne ikke
+              skyldes almindelig seismisk aktivitet, men er en direkte
+              konsekvens af en enorm kraft, der påføres havbunden. Der er en
+              reel bekymring for, at Blækspruttens fortsatte aktivitet kan føre
+              til strukturelle kollaps i ældre bygninger og kritisk
+              infrastruktur (f.eks. broer og tunneler), især i tætbefolkede
+              områder. Beredskabsstyrelsen advarer om, at intensiteten og
+              hyppigheden af disse landsdækkende rystelser er i stigning,
+              hvilket reducerer tidsvinduet for sikker reaktion.
+            </p>
+          </div>
         </article>
+
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>De nye beredskabsanbefalinger</p>
+          <img src="img/alarm .webp" alt="alarm" />
+          <button popovertarget="popup1" class="cta_btn">Læs mere</button>
+
+          <div popover id="popup1">
+            <h2>
+              Myndighederne opfordrer til ekstrem agtpågivenhed og øjeblikkelig
+              handling. Korrekt adfærd kan redde liv:
+            </h2>
+            <p>
+              1. Omgående Evakuering af Kystnære Zoner: Hold dig mindst 2
+              kilometers afstand fra hele Københavns Havn og alle tilstødende
+              kystlinjer langs Øresund. Dette omfatter boligområder,
+              arbejdspladser og offentlige seværdigheder i nærheden af vandet.
+              Blækspruttens umiddelbare nærhedszone betragtes som livsfarlig.
+            </p>
+
+            <p>
+              2. Sikkerhed under Rystelser: Ved den mindste mærkbare rystelse
+              skal følgende protokol følges øjeblikkeligt: DROP, COVER, HOLD ON.
+              DROP dig ned på gulvet. COVER dig under robuste møbler. Hvis intet
+              dækken er tilgængeligt, dæk dit hoved og nakke med armene. HOLD ON
+              indtil rystelserne ophører. Hold afstand til vinduer, hylder og
+              tunge genstande, der kan vælte.
+            </p>
+            <p>
+              3. Transport og Færden: Undgå al unødvendig færdsel. Offentlig
+              transport kan blive påvirket af rystelser eller
+              nødberedskabsrestriktioner. Broer og tunneler skal undgås,
+              medmindre det er absolut nødvendigt for en beordret evakuering.
+            </p>
+            <p>
+              4. Information og Ro: Følg udelukkende information fra officielle
+              kanaler (Politi, Beredskabsstyrelsen, Kommunale Myndigheder).
+              Spredning af rygter skaber unødig panik og forstyrrer
+              redningsarbejdet.
+            </p>
+            <p>
+              Vi gentager: Blæksprutten er en aktiv og voksende trussel. Hold
+              roen, og følg udelukkende officielle anvisninger. Denne side
+              opdateres kontinuerligt.
+            </p>
+          </div>
         </article>
+
         <article class="news_card">
           <h3>Nyhed</h3>
-          <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-          <img src="" alt="news_img" />
-          <a class="cta_btn" href="">Læs mere</a>
+          <p>
+            KRITISK FORSYNINGSALARM: Vandmangel og Psykisk Beredskab
+            Blækspruttens Trusler Påvirker Livsvigtige Forsyninger og Borgernes
+            Trivsel
+          </p>
+          <img src="img/vandværk.webp" alt="vandværk" />
+          <button popovertarget="popup2" class="cta_btn">Læs mere</button>
+
+          <div popover id="popup2">
+            <h2>Akut Vandsituation: Kritiske Reservetab</h2>
+            <p>
+              De voldsomme og vedvarende rystelser udløst af Blæksprutten har
+              forårsaget alvorlige skader på Danmarks vandforsyningsnet. Der er
+              rapporteret om brud på hovedvandledninger i flere regioner,
+              hvilket har resulteret i drastiske fald i reserven af rent
+              drikkevand.
+            </p>
+            <p>
+              Vi beordrer ALLE borgere til øjeblikkeligt at reducere deres
+              vandforbrug til et absolut minimum.
+            </p>
+            <ul>
+              <li>
+                Prioritér Drikkevand: Vand fra hanen er ikke længere garanteret
+                sikkert i alle områder. Følg myndighedernes anvisninger om
+                eventuel kogning. Prioritér alt flaskevand til drikke og
+                madlavning.
+              </li>
+              <li>
+                Vandrationering: Forbered jer på officiel vandrationering i de
+                kommende timer. Brug kun vand til livsnødvendige formål (drikke,
+                hygiejne i et minimumsomfang).
+              </li>
+              <li>
+                Ingen Vanding/Vask: Al brug af vand til tøjvask, bilvask eller
+                vanding af haver er strengt forbudt.
+              </li>
+            </ul>
+            <p></p>
+            <p>
+              Mental Beredskab: Håndtering af Krisefrygt Den åbenlyse,
+              uforudsigelige trussel fra Blæksprutten og de konstante rystelser
+              skaber et massivt psykisk pres. Psykologisk Beredskab (PSYB)
+              advarer mod panik og opfordrer til fokus på basal mental hygiejne
+              for at opretholde handleevne.
+            </p>
+
+            <ul>
+              <li>
+                Anerkend Frygten: Det er normalt at føle frygt, angst og
+                hjælpeløshed. Tal med familiemedlemmer eller naboer, men undgå
+                at fokusere på rygter.
+              </li>
+
+              <li>
+                Fokusér på Kontrol: Fokuser på de ting, du kan kontrollere: din
+                nødproviant, dit sikre dækken og din evne til at følge de
+                officielle anvisninger.
+              </li>
+              <li>
+                Begræns Nyheder: Voksne skal begrænse eksponeringen for nyheder,
+                særligt børn. Kontroller informationsindtaget og hold dig
+                udelukkende til denne beredskabsside for de mest nødvendige
+                opdateringer.
+              </li>
+              <li>
+                PSYB-Hotline: En national psykologisk hotline er aktiveret for
+                alle, der oplever akut panik eller angst. (Bemærk:
+                Hotline-nummer findes i den separate ressourceoversigt).
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
     </main>

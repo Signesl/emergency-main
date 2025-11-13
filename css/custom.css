@@ -1,17 +1,17 @@
 :root {
   /* Colours */
-  --color-bg: #fceb94; /* page background /*
+  --color-bg: #c5bebe; /* page background /*
 
   /* Header */
-  --color-head-bg: #ff4b00;
+  --color-head-bg: #5f5f5f;
 
   /* Logotype */
-  --color-logotype-bg: #000;
+  --color-logotype-bg: #104a73;
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #6f90ef;
+  --color-menu-bg: #c42020;
   /* Links */
   --color-link-bg: #fffae2;
   --color-link-hover: #fff; /* used */
