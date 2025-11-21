@@ -3,11 +3,11 @@
 }
 .info-graphic,
 .info-text {
-  background-color: #3e687c;
+  background-color: light-dark(#3e687c, #6e6b6b);
   padding: 20px 0;
 }
 .info-graphic {
-  border-radius: 0;
+  border-radius: 5px;
   margin: 60px auto 80px auto;
 }
 .info-text h2 {
@@ -36,6 +36,7 @@
 .info-box {
   padding: 1.5rem 1rem 0.5rem 1rem;
   background-color: var(--color-infobox-1-bg);
+  border-radius: 10px;
 }
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);

@@ -1,19 +1,21 @@
 :root {
   /* Colours */
-  --color-bg: #c5bebe; /* page background /*
+  --color-bg: light-dark(#141d33, #3f3f3f);
+  background-color: var(--color-bg);
+  /* page background /*
 
   /* Header */
-  --color-head-bg: #5f5f5f;
+  --color-head-bg: light-dark(#cacfb2, #5f5f5f);
 
   /* Logotype */
-  --color-logotype-bg: #104a73;
+  --color-logotype-bg: light-dark(#104a73, #313131);
   --color-text-logotype: #fffae2;
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #c42020;
+  --color-menu-bg: light-dark(#092b39, #000000);
   /* Links */
-  --color-link-bg: #fffae2;
+  --color-link-bg: light-dark(#fffae2, #4d4d4d);
   --color-link-hover: #fff; /* used */
   --color-link-active: #99958f; /* used */
   --border-radius-links: 1px;
@@ -23,12 +25,12 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #000;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: light-dark(#59869b, #1f1f1f);
+  --color-headline-text-page: light-dark(#000, #464646);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text: light-dark(#000, #000);
+  --color-text-inverted: #000;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -37,12 +39,12 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #ff4b00;
+  --color-card-bg: light-dark(#cacfb2, #5f5f5f);
+  --color-cta-card-bg: #828282;
   /* news-cards */
-  --color-news-bg: #fffae2;
-  --color-news-bg-inverted: #dbe2f5;
-  --color-cta-newscard-bg: #ffa680;
+  --color-news-bg: light-dark(#fffae2, #5f5f5f);
+  --color-news-bg-inverted: light-dark(#4a6485, #979797);
+  --color-cta-newscard-bg: #828282;
   --color-cta-newscard-bg-inverted: #7b7d83;
 
   /* Fonts */
@@ -64,6 +66,27 @@
 
   /* Infographics */
   --color-info-bg: #676161;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-infobox-1-bg: light-dark(#59869b, #464545);
+  --color-infobox-2-bg: light-dark(#59869b, #464545);
+}
+
+button {
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
+  cursor: pointer;
+  margin-block: 1.5rlh;
+}
+/* Hover-styles */
+button:hover {
+  background: light-dark(#f4f3f3, #6c6b6b);
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
 }

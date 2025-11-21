@@ -3,13 +3,14 @@ input {
   padding: 0.25rlh;
   border-radius: 6px;
   box-shadow: 0px 1px 2px #0001;
-  background-color: #fff;
+  background-color: light-dark(none, #707070);
 }
 
 fieldset {
   border-color: #818080;
   padding: 2rem;
   border-radius: 1rem;
+  background-color: light-dark(#cacfb2, #b0b0b0);
 }
 
 #beskrivelse {
@@ -28,10 +29,24 @@ select#region::picker-icon {
 }
 
 button {
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 0.25rlh 0.5rlh;
+  border: none;
+  background: Canvas;
+  color: CanvasText;
+  border: 1px solid currentColor;
+  text-box: cap alphabetic;
+  padding: 1cap;
+  border-radius: 5px;
+  display: block;
   cursor: pointer;
+  margin-block: 1.5rlh;
+}
+/* Hover-styles */
+button:hover {
+  background: light-dark(#f4f3f3, #6c6b6b);
+}
+/* Active-styles (imens man klikker) */
+button:active {
+  scale: 0.98;
 }
 
 .error-message {
@@ -62,14 +77,6 @@ form {
   /* virker til både knapper og input-felter, select, textarea, links mm. */
   outline: 2px solid slateblue;
   outline-offset: 1px;
-}
-/* Hover-styles */
-button:hover {
-  background: #f4f3f3;
-}
-/* Active-styles (imens man klikker) */
-button:active {
-  scale: 0.98;
 }
 
 /* Validering */
